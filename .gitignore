@@ -21,3 +21,4 @@ scdl/*
 simple-update-notifier/*
 yarn/*
 zed/*
+.DS_Store
