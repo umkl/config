@@ -26,6 +26,7 @@ alias workc='function work_alias; timer $argv[1] && osascript -e "display notifi
 alias workt="timer $argv[1] && osascript -e 'display notification \"☕\" with title \"Work Timer is up!\" subtitle \"Take a Break 😊\" sound name \"Crystal\"' && say \"Phase complete\""
 alias rest="timer 10m && terminal-notifier -message 'Pomodoro' -title 'Break is over! Get back to work 😬' -appIcon '~/Pictures/pumpkin.png' -sound Crystal"
 alias loadsoundc="source ~/Music/myenv/bin/activate"
+alias dpsf="docker ps --format \"table {{.Names}}\t{{.Ports}}\t{{.ID}}\""
 
 # Set environment variables and update PATH
 set -gx PATH $PATH /usr/local/go
