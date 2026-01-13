@@ -21,4 +21,8 @@ scdl/*
 simple-update-notifier/*
 yarn/*
 zed/*
+nx/*
+shell_gpt/*
+wireshark/*
+configstore/*
 .DS_Store
