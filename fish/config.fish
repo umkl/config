@@ -15,3 +15,5 @@ if not string match -q -- $PNPM_HOME $PATH
   set -U fish_user_paths "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+alias dpsf="docker ps --format \"table {{.Names}}\t{{.Ports}}\t{{.ID}}\""

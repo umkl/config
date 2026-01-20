@@ -15,7 +15,12 @@ function fish_prompt
         set_color $fish_color_cwd
         printf '%s' (prompt_pwd)
         set_color normal
-    
+   
+
+        set_color yellow
+        printf '%s' (fish_git_prompt ' on %s')
+        set_color normal
+
         # Line 2
         echo
         if test -n "$VIRTUAL_ENV"
