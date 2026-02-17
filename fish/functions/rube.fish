@@ -1,3 +1,3 @@
 function rube
-    cd ~/Desktop/rudi-backend
+    cd ~/Desktop/backend-again/rudi-backend
 end
