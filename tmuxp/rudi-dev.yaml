@@ -1,0 +1,25 @@
+session_name: rudi-dev
+windows:
+  - window_name: services
+    layout: main-vertical
+    # This setting controls how much width the right "main" pane takes (e.g., 60%)
+    window_options:
+      main-pane-width: 60
+    start_directory: /Users/Hombre/Desktop/backend-again-2/rudi-backend
+    panes:
+      # PANE 1: This will be the BIG pane on the right
+      - shell_command:
+          - echo "Main Workspace"
+          - clear
+      # PANE 2: Top Left
+      - shell_command: 
+          - echo 'Starting API...'
+          - api:s
+      # PANE 3: Middle Left
+      - shell_command: 
+          - echo 'Starting MSC...'
+          - msc:s
+      # PANE 4: Bottom Left
+      - shell_command: 
+          - echo 'Starting MSP...'
+          - msp:s
