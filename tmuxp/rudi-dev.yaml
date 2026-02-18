@@ -19,6 +19,10 @@ windows:
       - shell_command: 
           - echo 'Starting MSC...'
           - msc:s
+    # PANE 5
+      - shell_command: 
+          - echo 'Starting MSA...'
+          - msa:s
       # PANE 4: Bottom Left
       - shell_command: 
           - echo 'Starting MSP...'
