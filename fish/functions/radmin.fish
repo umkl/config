@@ -1,3 +1,3 @@
 function radmin
-    rufi && npx nx serve rudi-service
+    rufi && npx nx run rudi-admin:serve
 end

@@ -2,28 +2,59 @@ session_name: rudi-dev
 windows:
   - window_name: services
     layout: main-vertical
-    # This setting controls how much width the right "main" pane takes (e.g., 60%)
     window_options:
       main-pane-width: 60
     start_directory: /Users/Hombre/Desktop/backend-again-2/rudi-backend
     panes:
-      # PANE 1: This will be the BIG pane on the right
       - shell_command:
           - echo "Main Workspace"
           - clear
-      # PANE 2: Top Left
-      - shell_command: 
+      - shell_command:
           - echo 'Starting API...'
-          - api:s
-      # PANE 3: Middle Left
-      - shell_command: 
+          - api:d
+      - shell_command:
           - echo 'Starting MSC...'
-          - msc:s
-    # PANE 5
-      - shell_command: 
+          - msc:d
+      - shell_command:
           - echo 'Starting MSA...'
-          - msa:s
-      # PANE 4: Bottom Left
-      - shell_command: 
+          - msa:d
+      - shell_command:
           - echo 'Starting MSP...'
-          - msp:s
+          - msp:d
+
+  - window_name: microservices
+    layout: main-horizontal
+    window_options:
+      main-pane-height: 50
+    start_directory: /Users/Hombre/Desktop/backend-again-2/rudi-backend
+    panes:
+      # Top Pane (Large)
+      - shell_command:
+          - echo "Microservice Dashboard"
+          - clear
+      # Bottom Left
+      - shell_command:
+          - mss:b
+          - mss:d
+      # Bottom Middle
+      - shell_command:
+          - msf:b
+          - msf:d
+      # Bottom Right
+      - shell_command:
+          - msm:b
+          - msm:d
+          
+  - window_name: frontend
+    layout: tiled
+    start_directory: /Users/Hombre/Desktop/uniqa-rudi
+    panes:
+      - shell_command:
+          - echo "Starting Admin Frontend..."
+          - radmin
+      - shell_command:
+          - echo "Starting Service Frontend..."
+          - rservice
+      - shell_command:
+          - echo "Starting User Frontend..."
+          - ruser
